@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лексический анализатор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>Ввод программы</h2>
+            <textarea id="codeInput" placeholder="Введите код TypeScript..."></textarea>
+            <button id="analyzeButton">Анализировать</button>
+        </div>
+        <div class="output-section">
+            <h2>Таблица токенов</h2>
+            <table id="tokensTable">
+                <thead>
+                    <tr>
+                        <th>Исходный код</th>
+                        <th>Класс токена</th>
+                        <th>Строка</th>
+                        <th>Столбец</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <h2>Ошибки</h2>
+            <ul id="errorsList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
